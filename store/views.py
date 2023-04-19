@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import Product
+from django.http import HttpResponse
+
 
 def store(request):
  products=Product.objects.all()
@@ -11,3 +13,9 @@ def cart(request):
 def checkout(request):
  context = {}
  return render(request, 'store/checkout.html', context)
+
+def get(request):
+ busqueda=request.GET.get('busqueda')
+ result=Product.objects.filter(name=busqueda)
+ mensaje="El resultado es : %s" %result[0] 
+ return HttpResponse(mensaje)
