@@ -13,6 +13,12 @@ def cart(request):
 def checkout(request):
  context = {}
  return render(request, 'store/checkout.html', context)
+def login(request):
+ context = {}
+ return render(request, 'store/login.html', context)
+def register(request):
+ context = {}
+ return render(request, 'store/register.html', context)
 
 def get(request):
  busqueda=request.GET.get('busqueda')
