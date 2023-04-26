@@ -1,41 +1,66 @@
-.card {
+/* Set the card style */
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #f39c12;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 10px;
+  }
   
- 
+  /* Set the form title style */
+  #form-title {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Set the input style */
+  input[type="text"], input[type="password"], input[type="email"] {
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
     border: none;
-      
-     
-    
-     
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-    
-    .card-header {
-      
-     
-    background-color: #007bff;
-      
-     
-    color: white;
-    }
-    
-    .btn-primary {
-      
-     
-    background-color: #007bff;
-      
-     
-    border-color: #007bff;
-    }
-    
-    .btn-primary:hover {
-      
-     
-    background-color: #0069d9;
-      
-     
-    border-color: #0062cc;
-    }
-    
-    .form-control:focus {
-      
-    }
+  }
+  
+  /* Set the button style */
+  .login_btn {
+    width: 100%;
+    background-color: #c0392b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .login_btn:hover {
+    cursor: pointer;
+  }
+  
+  /* Set the link style */
+  .links {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .links a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
